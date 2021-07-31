@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --coal: black;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    --web-padding: 5% 25%;
+    --mobile-padding: 2%;
+}
+.nav{
+    
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.container{
+    padding: var(--web-padding);
+}
+.display-flex{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.display-flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.app-name-div{
+    display: flex;
+}
+.app-name-div *{
+    color: var(--coal) !important;
+}
+.app-name{
+    font-size: 30px;
+}
+.app-name-icon{
+    font-size: 40px !important;
+}
+.search-div{
+    display: flex;
+    justify-content: center;
+}
+.codetodo-button{
+    box-shadow: var(--shadow);
+    padding: 10px;
+    border-radius: 30px;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    background-color: inherit;
+    background-color: var(--coal); 
+    color: white;
+}
+.icon-large{
+    font-size: 100px !important;
+}
+.icon-medium{
+    font-size: 35px !important;
+}
+hr{
+    border: none;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+input, textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: inherit;
+    box-shadow: var(--shadow);
+}
+.schedule-icon{
+    font-size: 40px !important;
+}
+textarea{
+    resize: none;
+}
+.float-right{
+    float: right;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-center{
+    text-align: center;
+}
+.codetodo{
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.mark{
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.add-codetodo{
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10%;
+    background-color: var(--coal); 
+    color: white;
+}
+.span-controller{
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    background-color: var(--coal); 
+    color: white;
+}
+.cl-coal{
+    color: var(--coal);
+}
+.cl-coal * {
+    color: var(--coal);
+}
+.title-large{
+    font-size: 30px;
+}
+.title{
+    font-size: 20px;
+}
+.title-small{
+    font-size: 12px !important;
+}
+.codetodo *{
+    color: black;
+}
+.add-codetodo span{
+    color: black;
+}
+.codetodo-new{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: var(--web-padding);
+    display: none;
+    background-color: white;
+    overflow: auto;
+}
+.codetodo-description{
+    max-height: 300px !important;
+    overflow: auto;
+
+}
+.codetodo-edit{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: var(--web-padding);
+    display: none;
+    background-color: white;
+    overflow: auto;
+}
+.display-none{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        padding: var(--mobile-padding);
+    }
+    .add-codetodo{
+        padding: 15px;
+        border-radius: 50%;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 3%;
+        background-color: var(--coal); 
+        color: white;
+    }
+    .codetodo-new{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: var(--mobile-padding);
+        display: none;
+        background-color: white;
+    }
+    .codetodo-edit{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: var(--mobile-padding);
+        display: none;
+        background-color: white;
+    }
+}
