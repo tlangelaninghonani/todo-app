@@ -8,6 +8,12 @@
     <title>CodeTodo</title>
 </head>
 <body>
+    <div id="new">
+    <span class="material-icons-round app-name-icon">
+                integration_instructions
+                </span>
+                <span class="app-name">CodeTodo</span>
+    </div>
     <div class="container">
         <span onclick="showElement('codetodonew', 'block')" class="material-icons-round add-codetodo">
             add
